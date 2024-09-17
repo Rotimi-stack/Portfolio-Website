@@ -22,14 +22,14 @@ html {
 
 /* Adjust spacing to ensure section headings are not hidden behind a fixed header */
 section {
-    padding-top: 70px; /* Adjust based on the height of your fixed header */
-    margin-top: -70px; /* Same as padding-top to offset the header */
+    padding-top: 70px; 
+    margin-top: -70px; 
 }
 
 /* Optional: Reset margin and add padding to headings if necessary */
 section h2 {
-    margin-top: 0; /* Reset margin if needed */
-    padding-top: 20px; /* Add padding to space out from the top of the section */
+    margin-top: 0;
+    padding-top: 20px; 
 }
 
 header {
@@ -40,11 +40,11 @@ header {
      border-bottom: 5px solid #00307a;
     position: fixed;
     position: fixed;
-    top: 0;                /* Position it at the top of the page */
+    top: 0;               
     left: 0;
-    width: 100%;           /* Ensure it spans the full width of the page */
+    width: 100%;           
     z-index: 1000; 
-    display: flex;        /* Ensure the header stays on top of other content */
+    display: flex;        
     justify-content: space-between;
     align-items: center;
 }
@@ -87,35 +87,35 @@ nav ul li a {
 /* Other styles remain the same */
 /* New section styles */
 .intro-section {
-    background-color: #ffffff; /* White background for the section */
-    padding: 0.5rem 0.5rem;        /* Top and bottom padding for spacing */
-    text-align: center;        /* Center align text */
+    background-color: #ffffff; 
+    padding: 0.5rem 0.5rem;     
+    text-align: center;     
     margin-top: -1rem;
 }
 
 .intro-heading {
-    font-size: 2.5rem; /* Adjust size as needed */
+    font-size: 2.5rem; 
     font-weight: bold;
     line-height: 1.2;
    
 }
 
 .intro-subheading {
-    font-size: 1.25rem; /* Adjust size as needed */
-    margin: 0;         /* Remove default margin */
+    font-size: 1.25rem; 
+    margin: 0;         
 }
 
 .intro-tag {
     font-weight: bold;
-    color: #007bff; /* Blue color for emphasis, change as needed */
+    color: #007bff; 
 }
 
 /* Styling for the image header section */
 .section-image {
     position: relative;
     width: 100%;
-    height: auto; /* Adjust to fit content or specify a fixed height if needed */
-    overflow: hidden; /* Ensure no overflow of content */
+    height: auto;
+    overflow: hidden; 
     margin-top: 1rem;
 }
 
@@ -123,7 +123,7 @@ nav ul li a {
     width: 100%;
     height: auto;
     display: block;
-    object-fit: cover; /* Ensures the image covers the section */
+    object-fit: cover; 
 }
 
 .image-header-content {
@@ -134,16 +134,16 @@ nav ul li a {
     padding: 2rem;
     color: #fff;
     text-align: left;
-    z-index: 10; /* Ensure it appears above the image */
+    z-index: 10; 
 }
 
 .image-header-title {
-    font-size: 3rem; /* Adjust size as needed */
+    font-size: 3rem; 
     margin: 0;
 }
 
 .image-header-subtitle {
-    font-size: 5rem; /* Adjust size as needed */
+    font-size: 5rem; 
     font-weight: bold;
     margin: 0;
 }
@@ -168,54 +168,54 @@ nav ul li a {
 
 /* Container styling */
 .w3-container {
-    max-width: 1000px;        /* Adjust the maximum width as needed */
-    margin: 0 auto;           /* Center the container horizontally */
-    padding: 20px;            /* Add padding inside the container */
+    max-width: 1000px;        
+    margin: 0 auto;           
+    padding: 20px;
     overflow: hidden; 
     position:relative;
 }
 
 /* Image styling */
 .w3-image {
-    width: 30%;               /* Set the desired width of the image */
-    max-width: 500px;         /* Optional: Set a maximum width for better control */
-    height: auto;             /* Maintain aspect ratio based on width */
-    float: left;              /* Float the image to the left */
-    margin-right: 20px;       /* Space between image and text */
-    margin-bottom: 20px;      /* Add margin at the bottom to prevent overflow into next section */
-    border-radius: 8px;       /* Optional: add rounded corners to the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+    width: 30%;               
+    max-width: 500px;         
+    height: auto;             
+    float: left;              
+    margin-right: 20px;      
+    margin-bottom: 20px;      
+    border-radius: 8px;     
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Text content styling */
 .w3-justify {
-    text-align: left;         /* Align text to the left */
+    text-align: left;      
     overflow: hidden; 
 }
 
 /* Optional button styling */
 .w3-button {
-    margin: 10px 0;          /* Space around buttons */
+    margin: 10px 0;       
 }
 
 
 * Text content styling */
 .text-content {
-    flex: 1;                  /* Allow the text to take the remaining space */
+    flex: 1;                
 }
 
 /* Headings and paragraph styling */
 .w3-center {
-    text-align: left;         /* Align text to the left */
+    text-align: left;        
 }
 /* Ensure the content stays clear of floating elements */
 .w3-clear {
-    clear: both;              /* Clear the float, ensuring the following section starts below the image */
-    height: 0;                /* Optional: ensure no extra height */
+    clear: both;         
+    height: 0;               
 }
 .w3-center h3, .w3-center h5 {
-    margin: 30;                /* Remove default margins */
-    padding: 0;               /* Remove default padding */
+    margin: 30;               
+    padding: 0;              
     text-align: center; 
 }
 
@@ -223,63 +223,63 @@ nav ul li a {
 /* Container for buttons to align them on the same line */
 /* Container for buttons to align them on the same line */
 .button-container {
-    display: flex;                  /* Use flexbox to align children */
-    justify-content: flex-end;      /* Align items to the end (right) */
-    gap: 10px;                      /* Space between buttons */
-    align-items: center;            /* Vertically center items within the container */
+    display: flex;                  
+    justify-content: flex-end;      
+    gap: 10px;                      
+    align-items: center; 
 }
 
 /* Ensure paragraph tags do not add extra margin or padding */
 .w3-left {
-    margin: 0;                      /* Remove default margin */
-    padding: 0;                     /* Remove default padding */
+    margin: 0;                     
+    padding: 0;                     
 }
 
 /* Like Button Styling */
 .w3-left .w3-button {
-    background-color: black;      /* Default background color */
-    color: white;                 /* Text color */
-    border: 1px solid black;      /* Border color */
-    padding: 10px 20px;           /* Padding inside the button */
-    text-align: center;           /* Center text inside the button */
+    background-color: black;     
+    color: white;                 
+    border: 1px solid black;      
+    padding: 10px 20px;          
+    text-align: center;        
     text-decoration: none;        /* Remove underline from links */
-    display: inline-block;        /* Ensure button is inline with text */
-    border-radius: 5px;           /* Rounded corners */
-    font-size: 1rem;              /* Font size */
-    cursor: pointer;              /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    vertical-align: middle;       /* Align the button vertically in the middle */
+    display: inline-block;        
+    border-radius: 5px;           
+    font-size: 1rem;           
+    cursor: pointer;             
+    transition: background-color 0.3s ease; 
+    vertical-align: middle;      
 }
 
 .w3-left .w3-button:hover {
-    background-color: gray;   /* Background color on hover */
-    color: white;             /* Text color on hover */
+    background-color: gray;   
+    color: white;             
 }
 
 .w3-left .w3-button i {
-    margin-right: 5px;        /* Space between icon and text */
+    margin-right: 5px;       
 }
 
 /* Reply Button Styling */
 .w3-left .w3-button-reply {
-    background-color: black;      /* Default background color */
-    color: white;                 /* Text color */
-    border: 1px solid black;      /* Border color */
-    padding: 10px 20px;           /* Padding inside the button */
-    text-align: center;           /* Center text inside the button */
-    text-decoration: none;        /* Remove underline from links */
-    display: inline-block;        /* Ensure button is inline with text */
-    border-radius: 5px;           /* Rounded corners */
-    font-size: 1rem;              /* Font size */
-    cursor: pointer;              /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    vertical-align: middle;       /* Align the button vertically in the middle */
+    background-color: black;      
+    color: white;                 
+    border: 1px solid black;    
+    padding: 10px 20px;          
+    text-align: center;           
+    text-decoration: none;       
+    display: inline-block;        
+    border-radius: 5px;         
+    font-size: 1rem;             
+    cursor: pointer;              
+    transition: background-color 0.3s ease; 
+    vertical-align: middle;      
 }
 
 /* Hover Effect for Reply Button */
 .w3-left .w3-button-reply:hover {
-    background-color: lightgray;  /* Background color on hover */
-    color: black;                 /* Text color on hover */
+    background-color: lightgray;  
+    color: black;              
 }
 
 
@@ -287,59 +287,59 @@ nav ul li a {
 /* Interest Section Container styling */
 /* Interest Section Container styling */
 .interest-container {
-    max-width: 1000px;        /* Adjust the maximum width as needed */
-    margin: 0 auto;           /* Center the container horizontally */
-    padding: 20px;            /* Add padding inside the container */
-    overflow: hidden;         /* Ensure the content stays within the container */
+    max-width: 1000px;     
+    margin: 0 auto;           
+    padding: 20px;           
+    overflow: hidden;         
     position: relative;
 }
 
 /* Interest Image styling */
 .interest-image {
-    width: 30%;               /* Set the desired width of the image */
-    max-width: 500px;         /* Optional: Set a maximum width for better control */
-    height: auto;             /* Maintain aspect ratio based on width */
-    float: left;              /* Float the image to the left */
-    margin-right: 20px;       /* Space between image and text */
-    margin-bottom: 20px;      /* Add margin at the bottom to prevent overflow into next section */
-    border-radius: 8px;       /* Optional: add rounded corners to the image */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+    width: 30%;               
+    max-width: 500px;         
+    height: auto;            
+    float: left;          
+    margin-right: 20px;  
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Text content styling for Interest section */
 .interest-justify {
-    text-align: left;         /* Align text to the left */
-    overflow: hidden;         /* Ensure content doesn't overflow the container */
+    text-align: left;         
+    overflow: hidden;   
 }
 
 /* Optional button styling */
 .interest-left, .interest-right {
-    margin: 10px 0;           /* Space around buttons */
+    margin: 10px 0;    
 }
 
 /* Headings and paragraph styling for the Interest section */
 .interest-header {
-    text-align: left;         /* Align text to the left */
+    text-align: left; 
 }
 
 /* Ensure the content stays clear of floating elements */
 .interest-clear {
-    clear: both;              /* Clear the float, ensuring the following section starts below the image */
-    height: 0;                /* Optional: ensure no extra height */
+    clear: both;             
+    height: 0;
 }
 
 /* Headings specific to Interest section */
 .interest-header h3, .interest-header h5 {
-    margin: 10px 0;           /* Adjust margins */
-    padding: 0;               /* Remove default padding */
-    text-align: center;       /* Center align text */
+    margin: 10px 0;          
+    padding: 0;               
+    text-align: center; 
 }
 
 /* Interest Section Heading Line */
 .interests-heading::after {
     content: "";
     display: block;
-    width: 100%;               /* Adjust to fit the heading text */
+    width: 100%;  
     height: 2px;
     background: lightgray;
     position: absolute;
@@ -349,78 +349,78 @@ nav ul li a {
 
 /* Container for Interest buttons to align them on the same line */
 .button-container-interest {
-    display: flex;                  /* Use flexbox to align children */
-    justify-content: flex-end;      /* Align items to the end (right) */
-    gap: 10px;                      /* Space between buttons */
-    align-items: center;            /* Vertically center items within the container */
+    display: flex;                  
+    justify-content: flex-end;
+    gap: 10px;                   
+    align-items: center; 
 }
 
 /* Ensure paragraph tags do not add extra margin or padding */
 .interest-left, .interest-right {
-    margin: 0;                      /* Remove default margin */
-    padding: 0;                     /* Remove default padding */
+    margin: 0;                     
+    padding: 0;              
 }
 
 /* Like Button Styling */
 .interest-left .w3-button {
-    background-color: black;      /* Default background color */
-    color: white;                 /* Text color */
-    border: 1px solid black;      /* Border color */
-    padding: 10px 20px;           /* Padding inside the button */
-    text-align: center;           /* Center text inside the button */
-    text-decoration: none;        /* Remove underline from links */
-    display: inline-block;        /* Ensure button is inline with text */
-    border-radius: 5px;           /* Rounded corners */
-    font-size: 1rem;              /* Font size */
-    cursor: pointer;              /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    vertical-align: middle;       /* Align the button vertically in the middle */
+    background-color: black;      
+    color: white;                
+    border: 1px solid black;   
+    padding: 10px 20px;           
+    text-align: center;           
+    text-decoration: none;       
+    display: inline-block;       
+    border-radius: 5px;          
+    font-size: 1rem;             
+    cursor: pointer;             
+    transition: background-color 0.3s ease; 
+    vertical-align: middle;  
 }
 
 .interest-left .w3-button:hover {
-    background-color: gray;   /* Background color on hover */
-    color: white;             /* Text color on hover */
+    background-color: gray;   
+    color: white;            
 }
 
 .interest-left .w3-button i {
-    margin-right: 5px;        /* Space between icon and text */
+    margin-right: 5px;    
 }
 
 /* Reply Button Styling */
 .interest-right .w3-button {
-    background-color: black;      /* Default background color */
-    color: white;                 /* Text color */
-    border: 1px solid black;      /* Border color */
-    padding: 10px 20px;           /* Padding inside the button */
-    text-align: center;           /* Center text inside the button */
-    text-decoration: none;        /* Remove underline from links */
-    display: inline-block;        /* Ensure button is inline with text */
-    border-radius: 5px;           /* Rounded corners */
-    font-size: 1rem;              /* Font size */
-    cursor: pointer;              /* Pointer cursor on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    vertical-align: middle;       /* Align the button vertically in the middle */
+    background-color: black;      
+    color: white;                 
+    border: 1px solid black;      
+    padding: 10px 20px;          
+    text-align: center;          
+    text-decoration: none;       
+    display: inline-block;       
+    border-radius: 5px;          
+    font-size: 1rem;            
+    cursor: pointer;             
+    transition: background-color 0.3s ease; 
+    vertical-align: middle;  
 }
 
 /* Hover Effect for Reply Button */
 .interest-right .w3-button:hover {
-    background-color: lightgray;  /* Background color on hover */
-    color: black;                 /* Text color on hover */
+    background-color: lightgray; 
+    color: black;               
 }
 
 
 /* Underline for h2 Headings */
 h2 {
-    position: relative;            /* Position relative to use pseudo-element for underline */
-    display: inline-block;        /* Ensure the underline fits the text width */
-    padding-bottom: 5px;          /* Space between text and underline */
+    position: relative;    
+    display: inline-block;   
+    padding-bottom: 5px;         
     margin-bottom: 1rem;
 }
 
 .about-heading::after {
     content: "";
     display: block;
-    width: 1000%;             /* Adjust to fit the heading text */
+    width: 1000%;             
     height: 2px;
     background: lightgray;
     position: absolute;
@@ -432,7 +432,7 @@ h2 {
 .languages-heading::after {
     content: "";
     display: block;
-    width: 370%;              /* Adjust to fit the heading text */
+    width: 370%;            
     height: 2px;
     background: lightgray;
     position: absolute;
@@ -444,7 +444,7 @@ h2 {
 .education-heading::after {
     content: "";
     display: block;
-    width: 1000%;              /* Adjust to fit the heading text */
+    width: 1000%;              
     height: 2px;
     background: lightgray;
     position: absolute;
@@ -456,7 +456,7 @@ h2 {
 .projects-heading::after {
     content: "";
     display: block;
-    width: 1200%;             /* Adjust to fit the heading text */
+    width: 1200%;           
     height: 2px;
     background: lightgray;
     position: absolute;
@@ -466,28 +466,28 @@ h2 {
 
 /* Contact Section */
 #contact {
-    background-color: #333;  /* Dark Grey Background */
-    color: #fff;             /* White Text for better readability */
+    background-color: #333;  
+    color: #fff;            
     padding: 2rem;
     border-radius: 8px;
-    max-width: 800px;        /* Maintain a maximum width for the form */
-    margin: 0 auto;          /* Center the form horizontally */
+    max-width: 800px;       
+    margin: 0 auto;         
 }
 
 /* Contact Heading Styling */
 .contact-heading {
-    text-align: center;      /* Center align heading */
+    text-align: center;     
     position: relative;
-    margin-bottom: 1.5rem;   /* Space below the heading */
-    font-size: 2rem;         /* Font size for the heading */
-    color: #fff;             /* White text color */
+    margin-bottom: 1.5rem;  
+    font-size: 2rem;        
+    color: #fff;           
 }
 
 /* Contact Heading After Pseudo-element */
 .contact-heading::after {
     content: "";
     display: block;
-    width: 50%;              /* Adjust to fit the heading text */
+    width: 50%;            
     height: 2px;
     background: lightgray;
     position: absolute;
@@ -497,67 +497,80 @@ h2 {
 
 /* Form Styling */
 #contact form {
-    display: flex;                   /* Flexbox for form layout */
-    flex-direction: column;          /* Stack form elements vertically */
-    gap: 1rem;                       /* Space between form elements */
+    display: flex;                  
+    flex-direction: column;         
+    gap: 1rem;                      
 }
 
 /* Input and Textarea Styling */
 #contact form input,
 #contact form textarea {
-    width: 100%;                     /* Full width of the parent container */
-    padding: 0.75rem;                /* Padding inside the input fields */
-    border: 1px solid #555;          /* Border color for input fields */
-    border-radius: 4px;              /* Rounded corners */
-    background-color: #444;          /* Slightly lighter grey for input fields */
-    color: #fff;                     /* White text color */
-    box-sizing: border-box;          /* Include padding and border in the element's total width and height */
+    width: 100%;                    
+    padding: 0.75rem;               
+    border: 1px solid #555;         
+    border-radius: 4px;              
+    background-color: #444;         
+    color: #fff;                   
+    box-sizing: border-box;  
 }
 
 /* Textarea Specific Styling */
 #contact form textarea {
-    height: 150px;                   /* Fixed height for textarea */
-    resize: vertical;                /* Allow vertical resizing */
+    height: 150px;                  
+    resize: vertical;          
 }
 
 /* Button Styling */
 #contact form button {
-    background-color: #555;         /* Darker button color */
-    padding: 0.75rem 1.5rem;        /* Padding inside the button */
-    color: #fff;                    /* White text color */
-    font-size: 0.9rem;              /* Font size */
-    border: none;                   /* No border */
-    cursor: pointer;                /* Pointer cursor on hover */
-    border-radius: 4px;             /* Rounded corners */
-    width: 150px;                   /* Fixed width */
-    margin-top: 1rem;               /* Space above the button */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-    box-sizing: border-box;         /* Include padding and border in the element's total width and height */
+    background-color: #555;        
+    padding: 0.75rem 1.5rem;        
+    color: #fff;                   
+    font-size: 0.9rem;              
+    border: none;                  
+    cursor: pointer;                
+    border-radius: 4px;             
+    width: 150px;                   
+    margin-top: 1rem;               
+    transition: background-color 0.3s ease; 
+    box-sizing: border-box;   
 }
 
 #contact form button:hover {
-    background-color: #777;         /* Lighter color on hover */
+    background-color: #777;        
 }
 
 /* Label Styling */
 #contact form label {
-    color: #fff;                    /* White text color for labels */
-    font-weight: bold;              /* Bold labels */
-    margin-bottom: 0.5rem;          /* Space below labels */
+    color: #fff;                   
+    font-weight: bold;             
+    margin-bottom: 0.5rem;         
 }
 
 /* Social Media Icons Styling */
 .social-icon {
-    color: #fff !important;         /* Ensure icons are white */
-    font-size: 1.5rem;              /* Adjust size as needed */
-    text-decoration: none;          /* Remove underline */
-    transition: color 0.3s ease;    /* Smooth transition for hover effect */
-    margin: 0 0.5rem;               /* Space between icons */
+    color: #fff !important;       
+    font-size: 1.5rem;              
+    text-decoration: none;          
+    transition: color 0.3s ease;   
+    margin: 0 0.5rem;              
 }
 
 .social-icon:hover {
-    color: #ddd;                    /* Light grey on hover */
+    color: #ddd;             
 }
+
+.whatsapp-qr-code {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.whatsapp-qr-code img {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
@@ -571,9 +584,9 @@ h2 {
     }
 
     #contact form button {
-        padding: 0.5rem 1rem;       /* Adjust padding for smaller screens */
-        font-size: 0.875rem;        /* Adjust font size for smaller screens */
-        width: 100%;                /* Full width on smaller screens */
+        padding: 0.5rem 1rem;     
+        font-size: 0.875rem;        
+        width: 100%;                
     }
 }
 
