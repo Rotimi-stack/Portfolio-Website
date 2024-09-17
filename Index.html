@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+<body>
+    <header>
+       <!-- Social Media Icons Container -->
+    <div class="social-media-icons">
+        <a href="https://www.linkedin.com/in/victor-arowolo-bb0ba8159/" class="w3-bar-item w3-button"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://web.facebook.com/ArowoloRotimii/about/" class="w3-bar-item w3-button"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="https://x.com/arowolovictoro" class="w3-bar-item w3-button"><i class="fa-brands fa-twitter"></i></a>
+       
+    </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#languages">Programming Languages</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<!-- New Centered Section -->
+<section class="intro-section">
+    <h1 class="intro-heading">VICTOR PORTFOLIO</h1>
+    <h6 class="intro-subheading">Welcome to the Portfolio of <span class="intro-tag">Victor's world</span></h6>
+</section>
+
+<!-- Image Header Section -->
+<section class="section-image">
+    <div class="image-header">
+        <img src="https://images.pexels.com/photos/3345882/pexels-photo-3345882.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Fashion Blog" class="image-header-img">
+        <div class="image-header-content">
+            <h6>
+                <button class="subscribe-button" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button>
+            </h6>
+        </div>
+    </div>
+</section>
+
+
+<!-- Grid -->
+ <section id="about">
+    <div class="w3-row w3-padding w3-border">
+        <!-- Blog entries -->
+        <div class="w3-col l8 s12">
+            <!-- Blog entry -->
+            <div class="w3-container w3-white w3-margin w3-padding-large">
+                <div class="w3-center">
+                    <h3>About</h3>
+                    <h5>Hardworking and Passionate, <span class="w3-opacity">Updated September 2024</span></h5>
+                </div>
+    
+                <div class="w3-justify">
+                    <img src="https://scontent.flos5-1.fna.fbcdn.net/v/t39.30808-6/341781615_6491347024230640_5903674480141370509_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHvjduMEUFTg5v4UiBQJjO4adipRw3Kgcdp2KlHDcqBx_6CTMSdwqfmoXMxzIvCj1oJy_PrZ3aXF8_FhjH1e1x1&_nc_ohc=5QR9PPZsCFwQ7kNvgF41NAY&_nc_zt=23&_nc_ht=scontent.flos5-1.fna&_nc_gid=AdVHJh1MwMY5MfS0Nj-qpnj&oh=00_AYDw0jkwyvCum2gPVTf8UXJstUrH8EkXXMG9HZuYEv8m9w&oe=66EF2ACA" alt="About Me" class="w3-image">
+                
+                    <p><strong>Passionate Professional:</strong> I am a hardworking, passionate, and a meticulous software developer with a proven ability to meet tight deadlines while maintaining high standards of quality and performance. I pride myself on being an enthusiastic team player who is ready to contribute to the success of any organization. My organizational skills and dependability have allowed me to successfully manage multiple priorities, always with a positive attitude and a strong focus on results.</p>
+                    
+                    <p>Beyond my professional responsibilities, I actively seek out opportunities to take on additional challenges that align with team goals and objectives. My commitment to continuous learning and improvement has been key to staying up-to-date with the latest technological advancements in a rapidly evolving work environment.</p>
+                    
+                    <p>Through hands-on experience, I have gained valuable expertise working on production-level applications, where I collaborated with cross-functional teams to deliver software solutions in real-world settings. Additionally, I have taken the initiative to develop personal projects, guiding them from the initial design phase through to production deployment. These projects have not only enhanced my technical skills but also strengthened my ability to bring ideas to life through careful planning, implementation, and iteration.</p>
+                
+                   <!-- Like and Reply Buttons -->
+    <div class="button-container">
+        <p class="w3-left">
+            <button class="w3-button-reply" onclick="myFunction('demo1')" id="myBtn">
+                <b>Replies  </b> <span class="w3-tag w3-white">1</span>
+            </button>
+        </p>
+        
+        <p class="w3-left">
+            <button class="w3-button" onclick="likeFunction(this)">
+                <b><i class="fa fa-thumbs-up"></i> Like</b>
+            </button>
+        </p>
+    </div>
+    
+                
+                    <p class="w3-clear"></p>
+                
+                    <!-- Comment Section -->
+                    <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
+                        <hr>
+                        <div class="w3-col l2 m3">
+                            <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" style="width:90px;">
+                        </div>
+                        <div class="w3-col l10 m9">
+                            <h4>George <span class="w3-opacity w3-medium">September 15, 2024, 6:32 PM</span></h4>
+                            <p>Great work! Keep it up!</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+
+
+
+    <!-- Programming Languages Section -->
+    <section id="languages">
+        <h2 class="languages-heading">Programming Languages</h2>
+        <ul>
+            <li>C#</li>
+            <li>SQL</li>
+            <li>HTML/CSS</li>
+            <li>Bootstrap</li>
+            <li>Javascript</li>
+            <!-- Add more languages here -->
+        </ul>
+    </section>
+
+    <!-- Educational Background -->
+    <section id="education">
+        <h2 class="education-heading">Education</h2>
+        <p>Download my CV <a href="https://drive.google.com/file/d/1sb8a637dliZEd6aGXWRvTtcekXxE92jF/view?usp=sharing" download>here</a>.</p>
+    </section>
+
+    <!-- Grid -->
+<!-- Grid -->
+<!-- Interest Section -->
+ <section id="interests">
+    <div class="interest-row w3-padding w3-border">
+        <!-- Blog entries -->
+        <div class="w3-col l8 s12">
+            <!-- Blog entry -->
+            <div class="interest-container w3-white w3-margin w3-padding-large">
+                <div class="interest-header">
+                    <h3>Interests</h3>
+                    <h5>Passionate about Technology, <span class="w3-opacity">Updated September 2024</span></h5>
+                </div>
+    
+                <div class="interest-justify">
+                    <img src="https://scontent.flos5-1.fna.fbcdn.net/v/t39.30808-6/321632989_5776465815768691_6348055971901450480_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeF8KjZTnihvlYSMpjddlazyEPFu-ANXiNwQ8W74A1eI3H3hcJYPRMNhPU-fI7DwK8hklYxm5UhrNdMmueOTdJHm&_nc_ohc=LOqKXg2hxG8Q7kNvgF8YOJ_&_nc_zt=23&_nc_ht=scontent.flos5-1.fna&oh=00_AYDGJFWD6TQZ1oQ-QmMopqrlQ5sS-NVKDHJUFn7mJrFaTw&oe=66EF4293" alt="Interests" class="interest-image">
+                    
+                    <p><strong>Interests</strong> As a passionate software developer, I am deeply invested in designing and developing scalable applications that tackle real-world challenges. I am driven by the day-to-day challenges faced in society, which propels me to design and develop solutions to address these challenges. My focus is on creating innovative solutions that simplify daily activities, making life easier for both business owners and individuals. This involves not only understanding user needs but also leveraging the latest technologies to deliver efficient and effective software solutions.</p>
+
+<p>I am committed to continuous learning and staying current with emerging technologies. My enthusiasm for exploring new tools and frameworks drives me to practice and experiment with cutting-edge innovations. By incorporating the latest advancements into my projects, I aim to enhance and scale software solutions, ensuring they are both efficient and relevant in a rapidly evolving digital landscape. This dedication to learning and hands-on practice allows me to remain at the forefront of technology and apply these insights to create impactful and future-ready applications.</p>
+
+                    
+                    
+                    <!-- Like and Reply Buttons -->
+    <div class="button-container-interest">
+        <p class="interest-left">
+            <button class="w3-button w3-white w3-border" onclick="likeFunction(this)">
+                <b><i class="fa fa-thumbs-up"></i> Like</b>
+            </button>
+        </p>
+    
+        <p class="interest-right">
+            <button class="w3-button w3-black" onclick="myFunction('demo3')" id="myBtn3">
+                <b>Replies  </b> <span class="w3-tag w3-white">2</span>
+            </button>
+        </p>
+    </div>
+    
+                    
+                    <p class="interest-clear"></p>
+                    
+                    <!-- Comment Section -->
+                    <div class="w3-row w3-margin-bottom" id="demo3" style="display:none">
+                        <hr>
+                        <div class="w3-col l2 m3">
+                            <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" style="width:90px;">
+                        </div>
+                        <div class="w3-col l10 m9">
+                            <h4>John <span class="w3-opacity w3-medium">September 15, 2024, 6:45 PM</span></h4>
+                            <p>Great interests! Software development is a powerful tool to solve real-world problems.</p>
+                        </div>
+                        <div class="w3-col l2 m3">
+                            <img src="https://www.w3schools.com/w3images/avatar_smoke.jpg" style="width:90px;">
+                        </div>
+                        <div class="w3-col l10 m9">
+                            <h4>Mary <span class="w3-opacity w3-medium">September 15, 2024, 7:12 PM</span></h4>
+                            <p>I love your approach to learning new technologies!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ </section>
+
+
+
+
+
+
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="projects-heading">Projects</h2>
+        <ul>
+            <li><a href="https://github.com/Rotimi-stack/FSDHApiCleanArchitecture">FSDH API INTEGRATION</a> - An API that consumes endpoint from a third party API that provides Identity services and Payment Services</li>
+            <li><a href="https://github.com/Rotimi-stack/EnhancedVerification.Api">Identity Verification API</a> - Brief description of your project</li>
+            <li><a href="https://github.com/Rotimi-stack/Billpayment-flutwave-new">Payment API</a> - Bill Payment API that consumes endpoints from a third party financial service provides API</li>
+            <li><a href="https://github.com/Rotimi-stack/FJSCApp">Person Profile Registration Portal</a> - A Profile Registration Portal for registration and data retrieval</li>
+            <!-- Add more projects -->
+        </ul>
+    </section>
+
+   <!-- Contact Form -->
+<section id="contact">
+    <h2 class="contact-heading">Contact Me</h2>
+    <form action="submit_form.php" method="post" class="contact-form" id="contactForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required minlength="2" placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required minlength="10" placeholder="Enter your message"></textarea>
+
+        <button type="submit" class="contact-button">Send Message</button>
+    </form>
+    <div class="social-media-icon"></div>
+    <a href="https://wa.me/2347032482753" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a> <!-- Add WhatsApp Icon -->
+    <a href="https://www.linkedin.com/in/victor-arowolo-bb0ba8159/" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+    <a href="https://web.facebook.com/ArowoloRotimii/about/" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="https://x.com/arowolovictoro" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+    <a href="https://www.instagram.com/iam_durotimi/" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+   
+   
+    </div>
+</section>
+<br>
+
+    <footer>
+        <p>&copy; 2024 [Arowolo Victor]. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function likeFunction(button) {
+            button.innerHTML = "<b><i class='fa fa-thumbs-up'></i> Liked</b>";
+        }
+    
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

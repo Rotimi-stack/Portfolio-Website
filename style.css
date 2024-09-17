@@ -1,0 +1,612 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 2.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin-top: 80px; 
+    padding-top: 1rem;  
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Adjust spacing to ensure section headings are not hidden behind a fixed header */
+section {
+    padding-top: 70px; /* Adjust based on the height of your fixed header */
+    margin-top: -70px; /* Same as padding-top to offset the header */
+}
+
+/* Optional: Reset margin and add padding to headings if necessary */
+section h2 {
+    margin-top: 0; /* Reset margin if needed */
+    padding-top: 20px; /* Add padding to space out from the top of the section */
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 21x;
+    text-align: center;
+     border-bottom: 5px solid #00307a;
+    position: fixed;
+    position: fixed;
+    top: 0;                /* Position it at the top of the page */
+    left: 0;
+    width: 100%;           /* Ensure it spans the full width of the page */
+    z-index: 1000; 
+    display: flex;        /* Ensure the header stays on top of other content */
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media-icons {
+    display: flex;
+    margin-left: 10px;
+}
+
+.social-media-icons a {
+    color: white;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.social-media-icons a:hover {
+    color: #ddd; /* Light grey on hover */
+}
+
+/* Other styles remain the same */
+
+
+/* Other styles remain the same */
+/* New section styles */
+.intro-section {
+    background-color: #ffffff; /* White background for the section */
+    padding: 0.5rem 0.5rem;        /* Top and bottom padding for spacing */
+    text-align: center;        /* Center align text */
+    margin-top: -1rem;
+}
+
+.intro-heading {
+    font-size: 2.5rem; /* Adjust size as needed */
+    font-weight: bold;
+    line-height: 1.2;
+   
+}
+
+.intro-subheading {
+    font-size: 1.25rem; /* Adjust size as needed */
+    margin: 0;         /* Remove default margin */
+}
+
+.intro-tag {
+    font-weight: bold;
+    color: #007bff; /* Blue color for emphasis, change as needed */
+}
+
+/* Styling for the image header section */
+.section-image {
+    position: relative;
+    width: 100%;
+    height: auto; /* Adjust to fit content or specify a fixed height if needed */
+    overflow: hidden; /* Ensure no overflow of content */
+    margin-top: 1rem;
+}
+
+.image-header-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensures the image covers the section */
+}
+
+.image-header-content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 2rem;
+    color: #fff;
+    text-align: left;
+    z-index: 10; /* Ensure it appears above the image */
+}
+
+.image-header-title {
+    font-size: 3rem; /* Adjust size as needed */
+    margin: 0;
+}
+
+.image-header-subtitle {
+    font-size: 5rem; /* Adjust size as needed */
+    font-weight: bold;
+    margin: 0;
+}
+
+.subscribe-button {
+    background-color: #fff;
+    color: #333;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 4px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.subscribe-button:hover {
+    opacity: 1;
+}
+
+
+
+/* Container styling */
+.w3-container {
+    max-width: 1000px;        /* Adjust the maximum width as needed */
+    margin: 0 auto;           /* Center the container horizontally */
+    padding: 20px;            /* Add padding inside the container */
+    overflow: hidden; 
+    position:relative;
+}
+
+/* Image styling */
+.w3-image {
+    width: 30%;               /* Set the desired width of the image */
+    max-width: 500px;         /* Optional: Set a maximum width for better control */
+    height: auto;             /* Maintain aspect ratio based on width */
+    float: left;              /* Float the image to the left */
+    margin-right: 20px;       /* Space between image and text */
+    margin-bottom: 20px;      /* Add margin at the bottom to prevent overflow into next section */
+    border-radius: 8px;       /* Optional: add rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+}
+
+/* Text content styling */
+.w3-justify {
+    text-align: left;         /* Align text to the left */
+    overflow: hidden; 
+}
+
+/* Optional button styling */
+.w3-button {
+    margin: 10px 0;          /* Space around buttons */
+}
+
+
+* Text content styling */
+.text-content {
+    flex: 1;                  /* Allow the text to take the remaining space */
+}
+
+/* Headings and paragraph styling */
+.w3-center {
+    text-align: left;         /* Align text to the left */
+}
+/* Ensure the content stays clear of floating elements */
+.w3-clear {
+    clear: both;              /* Clear the float, ensuring the following section starts below the image */
+    height: 0;                /* Optional: ensure no extra height */
+}
+.w3-center h3, .w3-center h5 {
+    margin: 30;                /* Remove default margins */
+    padding: 0;               /* Remove default padding */
+    text-align: center; 
+}
+
+/* Styling for the like button with w3-left class */
+/* Container for buttons to align them on the same line */
+/* Container for buttons to align them on the same line */
+.button-container {
+    display: flex;                  /* Use flexbox to align children */
+    justify-content: flex-end;      /* Align items to the end (right) */
+    gap: 10px;                      /* Space between buttons */
+    align-items: center;            /* Vertically center items within the container */
+}
+
+/* Ensure paragraph tags do not add extra margin or padding */
+.w3-left {
+    margin: 0;                      /* Remove default margin */
+    padding: 0;                     /* Remove default padding */
+}
+
+/* Like Button Styling */
+.w3-left .w3-button {
+    background-color: black;      /* Default background color */
+    color: white;                 /* Text color */
+    border: 1px solid black;      /* Border color */
+    padding: 10px 20px;           /* Padding inside the button */
+    text-align: center;           /* Center text inside the button */
+    text-decoration: none;        /* Remove underline from links */
+    display: inline-block;        /* Ensure button is inline with text */
+    border-radius: 5px;           /* Rounded corners */
+    font-size: 1rem;              /* Font size */
+    cursor: pointer;              /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    vertical-align: middle;       /* Align the button vertically in the middle */
+}
+
+.w3-left .w3-button:hover {
+    background-color: gray;   /* Background color on hover */
+    color: white;             /* Text color on hover */
+}
+
+.w3-left .w3-button i {
+    margin-right: 5px;        /* Space between icon and text */
+}
+
+/* Reply Button Styling */
+.w3-left .w3-button-reply {
+    background-color: black;      /* Default background color */
+    color: white;                 /* Text color */
+    border: 1px solid black;      /* Border color */
+    padding: 10px 20px;           /* Padding inside the button */
+    text-align: center;           /* Center text inside the button */
+    text-decoration: none;        /* Remove underline from links */
+    display: inline-block;        /* Ensure button is inline with text */
+    border-radius: 5px;           /* Rounded corners */
+    font-size: 1rem;              /* Font size */
+    cursor: pointer;              /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    vertical-align: middle;       /* Align the button vertically in the middle */
+}
+
+/* Hover Effect for Reply Button */
+.w3-left .w3-button-reply:hover {
+    background-color: lightgray;  /* Background color on hover */
+    color: black;                 /* Text color on hover */
+}
+
+
+
+/* Interest Section Container styling */
+/* Interest Section Container styling */
+.interest-container {
+    max-width: 1000px;        /* Adjust the maximum width as needed */
+    margin: 0 auto;           /* Center the container horizontally */
+    padding: 20px;            /* Add padding inside the container */
+    overflow: hidden;         /* Ensure the content stays within the container */
+    position: relative;
+}
+
+/* Interest Image styling */
+.interest-image {
+    width: 30%;               /* Set the desired width of the image */
+    max-width: 500px;         /* Optional: Set a maximum width for better control */
+    height: auto;             /* Maintain aspect ratio based on width */
+    float: left;              /* Float the image to the left */
+    margin-right: 20px;       /* Space between image and text */
+    margin-bottom: 20px;      /* Add margin at the bottom to prevent overflow into next section */
+    border-radius: 8px;       /* Optional: add rounded corners to the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+}
+
+/* Text content styling for Interest section */
+.interest-justify {
+    text-align: left;         /* Align text to the left */
+    overflow: hidden;         /* Ensure content doesn't overflow the container */
+}
+
+/* Optional button styling */
+.interest-left, .interest-right {
+    margin: 10px 0;           /* Space around buttons */
+}
+
+/* Headings and paragraph styling for the Interest section */
+.interest-header {
+    text-align: left;         /* Align text to the left */
+}
+
+/* Ensure the content stays clear of floating elements */
+.interest-clear {
+    clear: both;              /* Clear the float, ensuring the following section starts below the image */
+    height: 0;                /* Optional: ensure no extra height */
+}
+
+/* Headings specific to Interest section */
+.interest-header h3, .interest-header h5 {
+    margin: 10px 0;           /* Adjust margins */
+    padding: 0;               /* Remove default padding */
+    text-align: center;       /* Center align text */
+}
+
+/* Interest Section Heading Line */
+.interests-heading::after {
+    content: "";
+    display: block;
+    width: 100%;               /* Adjust to fit the heading text */
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Container for Interest buttons to align them on the same line */
+.button-container-interest {
+    display: flex;                  /* Use flexbox to align children */
+    justify-content: flex-end;      /* Align items to the end (right) */
+    gap: 10px;                      /* Space between buttons */
+    align-items: center;            /* Vertically center items within the container */
+}
+
+/* Ensure paragraph tags do not add extra margin or padding */
+.interest-left, .interest-right {
+    margin: 0;                      /* Remove default margin */
+    padding: 0;                     /* Remove default padding */
+}
+
+/* Like Button Styling */
+.interest-left .w3-button {
+    background-color: black;      /* Default background color */
+    color: white;                 /* Text color */
+    border: 1px solid black;      /* Border color */
+    padding: 10px 20px;           /* Padding inside the button */
+    text-align: center;           /* Center text inside the button */
+    text-decoration: none;        /* Remove underline from links */
+    display: inline-block;        /* Ensure button is inline with text */
+    border-radius: 5px;           /* Rounded corners */
+    font-size: 1rem;              /* Font size */
+    cursor: pointer;              /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    vertical-align: middle;       /* Align the button vertically in the middle */
+}
+
+.interest-left .w3-button:hover {
+    background-color: gray;   /* Background color on hover */
+    color: white;             /* Text color on hover */
+}
+
+.interest-left .w3-button i {
+    margin-right: 5px;        /* Space between icon and text */
+}
+
+/* Reply Button Styling */
+.interest-right .w3-button {
+    background-color: black;      /* Default background color */
+    color: white;                 /* Text color */
+    border: 1px solid black;      /* Border color */
+    padding: 10px 20px;           /* Padding inside the button */
+    text-align: center;           /* Center text inside the button */
+    text-decoration: none;        /* Remove underline from links */
+    display: inline-block;        /* Ensure button is inline with text */
+    border-radius: 5px;           /* Rounded corners */
+    font-size: 1rem;              /* Font size */
+    cursor: pointer;              /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    vertical-align: middle;       /* Align the button vertically in the middle */
+}
+
+/* Hover Effect for Reply Button */
+.interest-right .w3-button:hover {
+    background-color: lightgray;  /* Background color on hover */
+    color: black;                 /* Text color on hover */
+}
+
+
+/* Underline for h2 Headings */
+h2 {
+    position: relative;            /* Position relative to use pseudo-element for underline */
+    display: inline-block;        /* Ensure the underline fits the text width */
+    padding-bottom: 5px;          /* Space between text and underline */
+    margin-bottom: 1rem;
+}
+
+.about-heading::after {
+    content: "";
+    display: block;
+    width: 1000%;             /* Adjust to fit the heading text */
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Programming Languages Section */
+.languages-heading::after {
+    content: "";
+    display: block;
+    width: 370%;              /* Adjust to fit the heading text */
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Educational Background Section */
+.education-heading::after {
+    content: "";
+    display: block;
+    width: 1000%;              /* Adjust to fit the heading text */
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Projects Section */
+.projects-heading::after {
+    content: "";
+    display: block;
+    width: 1200%;             /* Adjust to fit the heading text */
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #333;  /* Dark Grey Background */
+    color: #fff;             /* White Text for better readability */
+    padding: 2rem;
+    border-radius: 8px;
+    max-width: 800px;        /* Maintain a maximum width for the form */
+    margin: 0 auto;          /* Center the form horizontally */
+}
+
+/* Contact Heading Styling */
+.contact-heading {
+    text-align: center;      /* Center align heading */
+    position: relative;
+    margin-bottom: 1.5rem;   /* Space below the heading */
+    font-size: 2rem;         /* Font size for the heading */
+    color: #fff;             /* White text color */
+}
+
+/* Contact Heading After Pseudo-element */
+.contact-heading::after {
+    content: "";
+    display: block;
+    width: 50%;              /* Adjust to fit the heading text */
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Form Styling */
+#contact form {
+    display: flex;                   /* Flexbox for form layout */
+    flex-direction: column;          /* Stack form elements vertically */
+    gap: 1rem;                       /* Space between form elements */
+}
+
+/* Input and Textarea Styling */
+#contact form input,
+#contact form textarea {
+    width: 100%;                     /* Full width of the parent container */
+    padding: 0.75rem;                /* Padding inside the input fields */
+    border: 1px solid #555;          /* Border color for input fields */
+    border-radius: 4px;              /* Rounded corners */
+    background-color: #444;          /* Slightly lighter grey for input fields */
+    color: #fff;                     /* White text color */
+    box-sizing: border-box;          /* Include padding and border in the element's total width and height */
+}
+
+/* Textarea Specific Styling */
+#contact form textarea {
+    height: 150px;                   /* Fixed height for textarea */
+    resize: vertical;                /* Allow vertical resizing */
+}
+
+/* Button Styling */
+#contact form button {
+    background-color: #555;         /* Darker button color */
+    padding: 0.75rem 1.5rem;        /* Padding inside the button */
+    color: #fff;                    /* White text color */
+    font-size: 0.9rem;              /* Font size */
+    border: none;                   /* No border */
+    cursor: pointer;                /* Pointer cursor on hover */
+    border-radius: 4px;             /* Rounded corners */
+    width: 150px;                   /* Fixed width */
+    margin-top: 1rem;               /* Space above the button */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    box-sizing: border-box;         /* Include padding and border in the element's total width and height */
+}
+
+#contact form button:hover {
+    background-color: #777;         /* Lighter color on hover */
+}
+
+/* Label Styling */
+#contact form label {
+    color: #fff;                    /* White text color for labels */
+    font-weight: bold;              /* Bold labels */
+    margin-bottom: 0.5rem;          /* Space below labels */
+}
+
+/* Social Media Icons Styling */
+.social-icon {
+    color: #fff !important;         /* Ensure icons are white */
+    font-size: 1.5rem;              /* Adjust size as needed */
+    text-decoration: none;          /* Remove underline */
+    transition: color 0.3s ease;    /* Smooth transition for hover effect */
+    margin: 0 0.5rem;               /* Space between icons */
+}
+
+.social-icon:hover {
+    color: #ddd;                    /* Light grey on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    #contact {
+        padding: 1rem;              /* Reduce padding on smaller screens */
+    }
+
+    #contact form input,
+    #contact form textarea {
+        font-size: 0.875rem;        /* Adjust font size for smaller screens */
+    }
+
+    #contact form button {
+        padding: 0.5rem 1rem;       /* Adjust padding for smaller screens */
+        font-size: 0.875rem;        /* Adjust font size for smaller screens */
+        width: 100%;                /* Full width on smaller screens */
+    }
+}
+
+
+
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+
+
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
