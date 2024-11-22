@@ -36,7 +36,7 @@
                 <li><a href="#education">Education</a></li>
                 <li><a href="#interests">Interests</a></li>
                 <li><a href="#projects">Projects</a></li>
-              
+
             </ul>
         </nav>
     </header>
@@ -233,14 +233,13 @@
 
             <div class="col-lg-3">
                 <div class="features-box">
-                    <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                        alt="JavaScript" />
+                    <img src="assets/colorpicker.jpg" alt="JavaScript" />
                     <div class="features-text">
-                        <h3>.NET/NET CORE</h3>
+                        <h3>imagecolorpicker.com</h3>
                         <p>
-                            A powerful framework developed by Microsoft for building cross-platform, high-performance
-                            web applications, APIs, and microservices. It supports multiple programming languages and is
-                            widely used for enterprise-level applications.
+                            An image color picker tool allows you to select and extract colors from an image. This is
+                            often used in design, development, or art projects to maintain a consistent color scheme.
+                            Here's how it works and how you can create or use one.
                         </p>
 
                     </div>
@@ -418,7 +417,7 @@
             </div>
             <div class="project-box">
                 <a href="https://github.com/Rotimi-stack/Billpayment-flutwave-new">Middleware Pattern</a>
-                <p>I use  middleware for authentication. (authenticateToken) is a common pattern in Express.js
+                <p>I use middleware for authentication. (authenticateToken) is a common pattern in Express.js
                     applications. Middleware functions provide a way to centralize logic like authentication and
                     authorization checks, ensuring that they are executed before routing to specific endpoints..</p>
             </div>
@@ -433,45 +432,67 @@
             <!-- Additional Project Boxes -->
             <div class="project-box">
                 <a href="https://github.com/Rotimi-stack/Royalty-Turbo-Application.git">Password Hashing</a>
-                <p>In the registration route, passwords are hashed using bcrypt before being stored in the database, which is a security best practice for protecting sensitive data like passwords</p>
+                <p>In the registration route, passwords are hashed using bcrypt before being stored in the database,
+                    which is a security best practice for protecting sensitive data like passwords</p>
             </div>
             <div class="project-box">
                 <a href="https://github.com/Rotimi-stack/telemedicine-app.git">Session Management</a>
-                <p>Session Handling:My application uses sessions to manage logged-in users. For example, when a patient or admin logs in, their ID is stored in the session (req.session.patientId or req.session.adminId). This session-based approach provides a way to keep track of the user's login status across requests..</p>
+                <p>Session Handling:My application uses sessions to manage logged-in users. For example, when a patient
+                    or admin logs in, their ID is stored in the session (req.session.patientId or req.session.adminId).
+                    This session-based approach provides a way to keep track of the user's login status across
+                    requests..</p>
             </div>
             <div class="project-box">
-                <a href="https://github.com/Rotimi-stack/Database-Week-8-Final-Project.git">Serving Static HTML Pages Dynamically</a>
-                <p>In my application,i dynamically serve HTML pages (e.g., index.html, admin.html, login.html) by reading them from the file system and sending them to the client. This approach allows for flexibility in serving different pages based on user roles or actions</p>
+                <a href="https://github.com/Rotimi-stack/Database-Week-8-Final-Project.git">Serving Static HTML Pages
+                    Dynamically</a>
+                <p>In my application,i dynamically serve HTML pages (e.g., index.html, admin.html, login.html) by
+                    reading them from the file system and sending them to the client. This approach allows for
+                    flexibility in serving different pages based on user roles or actions</p>
             </div>
 
             <div class="project-box">
                 <a href="https://6708d7dceb72c6fafcc1c60c--moodmate-app.netlify.app/#more-resources">Error Handling
-                    </a>
-                <p>I  include code for error handling for various operations, such as reading files (fs.readFile), querying the database, and handling errors during password hashing. Proper error handling ensures that users receive meaningful error messages and prevents unhandled exceptions from crashing the server..</p>
+                </a>
+                <p>I include code for error handling for various operations, such as reading files (fs.readFile),
+                    querying the database, and handling errors during password hashing. Proper error handling ensures
+                    that users receive meaningful error messages and prevents unhandled exceptions from crashing the
+                    server..</p>
             </div>
 
             <div class="project-box">
-                <a href="https://6708d7dceb72c6fafcc1c60c--moodmate-app.netlify.app/#more-resources">Handling Role-Specific Routes and Access Control
-                    </a>
-                <p>I use role-based access control. (RBAC) is implemented, where routes like /admin are protected by JWT authentication and role checks to ensure that only users with the admin role can access them. If a user doesn't have the required role, a 403 Forbidden status is returned..</p>
+                <a href="https://6708d7dceb72c6fafcc1c60c--moodmate-app.netlify.app/#more-resources">Handling
+                    Role-Specific Routes and Access Control
+                </a>
+                <p>I use role-based access control. (RBAC) is implemented, where routes like /admin are protected by JWT
+                    authentication and role checks to ensure that only users with the admin role can access them. If a
+                    user doesn't have the required role, a 403 Forbidden status is returned..</p>
             </div>
 
             <div class="project-box">
-                <a href="https://6708d7dceb72c6fafcc1c60c--moodmate-app.netlify.app/#more-resources">Session-Based Conditional Rendering
-                    </a>
-                <p>I Implement logic for rendering pages conditionally based on the user's session (req.session.patientId or req.session.adminId) ensures that only authenticated users can access certain pages (like /profile, /doctor). If the user is not authenticated, they are redirected to the login page..</p>
+                <a href="https://6708d7dceb72c6fafcc1c60c--moodmate-app.netlify.app/#more-resources">Session-Based
+                    Conditional Rendering
+                </a>
+                <p>I Implement logic for rendering pages conditionally based on the user's session
+                    (req.session.patientId or req.session.adminId) ensures that only authenticated users can access
+                    certain pages (like /profile, /doctor). If the user is not authenticated, they are redirected to the
+                    login page..</p>
             </div>
 
             <div class="project-box">
-                <a href="https://6708d7dceb72c6fafcc1c60c--moodmate-app.netlify.app/#more-resources">Secure Communication (HTTPS)
-                    </a>
-                <p>I use SSL/TLS certificates (server.key and server.cert) indicates that HTTPS is implemented, ensuring secure communication between the client and the server. This is crucial for protecting sensitive data, such as passwords, during transmission..</p>
+                <a href="https://6708d7dceb72c6fafcc1c60c--moodmate-app.netlify.app/#more-resources">Secure
+                    Communication (HTTPS)
+                </a>
+                <p>I use SSL/TLS certificates (server.key and server.cert) indicates that HTTPS is implemented, ensuring
+                    secure communication between the client and the server. This is crucial for protecting sensitive
+                    data, such as passwords, during transmission..</p>
             </div>
 
             <div class="project-box">
                 <a href="https://6708d7dceb72c6fafcc1c60c--moodmate-app.netlify.app/#more-resources">Redirect Logic
-                    </a>
-                <p>I include logic to redirect users to appropriate pages based on certain conditions, such as after successful login or registration (res.redirect('/login') or res.redirect('/admin.html')). This provides a smoother user experience..</p>
+                </a>
+                <p>I include logic to redirect users to appropriate pages based on certain conditions, such as after
+                    successful login or registration (res.redirect('/login') or res.redirect('/admin.html')). This
+                    provides a smoother user experience..</p>
             </div>
         </div>
     </section>
